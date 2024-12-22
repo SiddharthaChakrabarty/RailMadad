@@ -1,5 +1,17 @@
 # Enhancing Rail Madad with AI-Powered Complaint Management
 
+
+  
+## Contributors
+
+- **Sneha Jain**
+- **Siddhartha Chakrabarty**
+- **Sakshi Salunke**   
+- **Pratham Gadkari**  
+- **Suraj Chavan**  
+- **Anuj Tadkase**  
+
+
 ## Index
 
 1. [Problem Statement](#1-problem-statement)  
