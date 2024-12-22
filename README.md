@@ -42,3 +42,131 @@ Our solution aims to provide a centralized platform for addressing all these iss
 Our solution aims to reduce both the response and disposal time by half. 
 Our aim is to simplify the categorization and routing process using AI based techniques to enable fast grievance redressal. 
 
+
+# Architecture
+
+![image](https://github.com/user-attachments/assets/9e45318b-d241-4421-abf4-aec6fee8d061)
+
+
+
+# METHODOLOGY and TechSTACK
+![image](https://github.com/user-attachments/assets/64b80809-c3e6-438a-8098-f3c27f99644a)
+Webdev:
+We have used the Python based framework Flask for the backend & Next JS for the frontend along with Tailwind CSS for the UI.
+GenAI/ML
+Scikit-Learn has been used for creating the ML models & Azure Cognitive Services has been used for the OCR technologies. We have used Langchain and Gemini for performing the RAG operations & fine-tuning.
+Databases
+We have used MongoDB Atlas Azure as the main database & Chroma DB for the Vector database for RAGs.
+Deployment
+We are using Azure Cloud Services & Docker for deployment on the cloud.
+
+
+
+
+AUTOMATED ROUTING PROCESS : 
+
+
+The complaint routing process works by first categorizing complaints according to Train & Station .
+ Then sending the complaints to the TTE and Station Master respectively who then forward it to the respective contractors or departments.
+If its a train related incident which the tte cannot sort, tte can route it to upcoming station, it will automatically be routed when tte declares that problem is unsolvable.
+ Also, if the complaint is not acknowledged within 5-10 minutes, then it is sent to the Division Office for further action. 
+At each routing department incharge of the complaint is aware of the issue, and once its declared unsolvable the respective department can take it in their hand.
+
+
+USPs :
+
+
+Our plan is explained in detail below. Following are the unique selling points of our solution: 
+
+![image](https://github.com/user-attachments/assets/12a59fc3-0dc4-455a-9feb-0536279c9460)
+
+
+Input  Considerations :
+
+All input types which we have implemented : 
+
+Twitter/ Social Media Post inputs
+https://github.com/JainSneha6/RailMadad/blob/main/backend/models/tweets.py
+
+
+Image inputs
+https://github.com/JainSneha6/RailMadad/blob/main/backend/models/image.py
+
+
+Video inputs
+https://github.com/JainSneha6/RailMadad/blob/main/backend/models/video.py
+
+
+Voice inputs
+https://github.com/JainSneha6/RailMadad/blob/main/backend/models/voice.py
+
+
+
+![image](https://github.com/user-attachments/assets/b71700d8-65eb-44a3-b289-e4ea7e97a520)
+
+
+Data Extraction From Voice  :
+
+
+We intend to do this by using the DistilBERT model which is a lighter and distilled version of the BERT Transformer model. 
+
+Why  DistilBERT you may ask??
+What we want to do through this is to find urgency/sentiment and also remove noise from the background through this model, so whenever customer is speaking only their content would be stored without the noise.
+
+Following is a detailed comparison of DistilBERT with other models:
+
+![image](https://github.com/user-attachments/assets/20f6f611-61a9-4e55-aa8f-7e717170a23e)
+
+![image](https://github.com/user-attachments/assets/d0839ee1-870b-4de6-918b-bcf3b9897aa6)
+
+Data Extraction From Text,Images,Videos  :
+There are a lot of image inputs in RailMadad platforms and also video inputs from social media, for extraction of content through those images we need to make sure that we use proper models
+Further on inputs are also directly taken from the RailMadad twitter handle as well as the RailMadad app and website which include multimedia like photos , videos etc
+This is followed by Data Extraction from the complaints using Multimedia processing. 
+We are performing this by utilizing a fine tuned YOLOv5 model based on the ResNet architecture. 
+Our intention behind using YOLOv5 is to detect key objects and contexts in the images and then categorize them accordingly. 
+
+![image](https://github.com/user-attachments/assets/70982645-68bc-4d45-a395-84d34e270d41)
+![image](https://github.com/user-attachments/assets/98c84e3b-d2d5-45e2-8537-6b1da5695b36)
+
+
+
+
+Complaint Resolution & Forwarding :
+After the categorization process, the complaints are sent to the TTEs and they are provided with detailed steps to resolve the issues generated dynamically using Gemini & a fine-tuned Llama 2 AI model
+If the complaint is not resolved on the TTE side, then he has the option to route it using natural language to specific departments responsible for the specific stations.
+
+![image](https://github.com/user-attachments/assets/81cf6245-0f02-4573-a3bf-334869bb5fa5)
+
+This entire routing through natural language is performed using Langchain and LLMs which interact with the database to extract information.
+
+![image](https://github.com/user-attachments/assets/1a9eb66a-2a6e-451e-ae98-2c3c9afdd996)
+
+![image](https://github.com/user-attachments/assets/82675eea-958c-485f-ac7a-6dc44fa48033)
+
+Moreover, we have used specific datasets and synthetic data which is in accordance with what the Railways currently use to enable easy integration with the existing architecture. 
+Department Wise Analytics :
+![image](https://github.com/user-attachments/assets/cd2239f0-93b4-40bd-89ab-a2eff2609d5e)
+
+Proper complaint segmentation has been performed and detailed department wise analytics displayed for easier visualization of trends and preventing recurring issues.
+
+
+Chat with Database :
+Natural language chat with the database has been integrated to get required data from the database without the hassle required with conventional methods of filtering and manual retrieval. 
+The LLM model has been used in pairing with Langchain to perform proper context generation from the chat and then implement retrieval from the Azure NoSQL database.
+So just in case the department wants to do analytics for daily data or some time specific data they can do that easily using this chat with database feature 
+
+
+Customer Feedback Sentiment Analysis :
+After successful resolution of complaints, customers are asked for feedback regarding the resolution process. 
+The feedback is then analyzed using Vader’s Sentiment Analyzer model for detecting the sentiment(Positive, Negative, Neutral). 
+Depending on the sentiment, further analysis is performed to predict trends and prevent recurring issues.
+
+![image](https://github.com/user-attachments/assets/d3a91399-c429-425a-b85e-25ad8ba4e046)
+
+
+Use of similar database for Compatibility :
+The structure of our database has been kept similar to what is used by the Railways currently to ensure compatibility & easy integration. 
+![image](https://github.com/user-attachments/assets/6cffdd48-b97f-4488-aa29-3485bf10fa38)
+
+
