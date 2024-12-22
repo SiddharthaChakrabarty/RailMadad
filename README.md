@@ -1,7 +1,5 @@
 # Enhancing Rail Madad with AI-Powered Complaint Management
 
----
-
 ## Index
 
 1. [Problem Statement](#1-problem-statement)  
@@ -10,25 +8,12 @@
 4. [Architecture](#4-architecture)  
 5. [Methodology and Tech Stack](#5-methodology-and-tech-stack)  
 6. [Automated Routing Process](#6-automated-routing-process)  
-7. [Unique Selling Points (USPs)](#7-unique-selling-points-usps)  
-8. [Input Considerations](#8-input-considerations)  
-9. [Data Extraction](#9-data-extraction)  
-   - [From Voice](#91-data-extraction-from-voice)  
-   - [From Text, Images, and Videos](#92-data-extraction-from-text-images-and-videos)  
-10. [Complaint Resolution and Forwarding](#10-complaint-resolution-and-forwarding)  
-11. [Department-Wise Analytics](#11-department-wise-analytics)  
-12. [Chat with Database](#12-chat-with-database)  
-13. [Customer Feedback Sentiment Analysis](#13-customer-feedback-sentiment-analysis)  
-14. [Database Compatibility](#14-database-compatibility)  
-15. [Business Model](#15-business-model)  
-16. [Dependencies](#16-dependencies)  
-17. [Demo Link and Implementation Images](#17-demo-link-and-implementation-images)  
-
----
+7. [Methodology and Unique Selling Points (USPs)](#7-methodology-and-unique-selling-points-usps)  
+8. [Demo Link and Implementation Images](#8-demo-link-and-implementation-images)  
+9. [Implementation Images](#9-implementation-images)
 
 ## 1. Problem Statement
 ![image](https://github.com/user-attachments/assets/93183a5b-2ca5-4ae7-adbd-21f71496c5b6)
-
 
 ## 2. Issues in Current System and Our Solution
 
@@ -41,7 +26,6 @@
 - Centralized AI-powered system for automated categorization, routing, and analysis.  
 - Real-time sentiment and urgency detection.  
 - Integration of multimedia processing capabilities.
-
 
 ### Expected Solution
 
@@ -69,10 +53,6 @@
    - **AI-Assisted Training**: Help staff analyze and resolve complaints efficiently using AI tools.  
    - **Resource Allocation**: Dynamically allocate resources based on complaint patterns.
 
----
-
-
-
 ## 3. Core Objectives
 
 - Reduce complaint response and resolution time by 50%.  
@@ -80,14 +60,13 @@
 
 ![Core Objectives](https://github.com/user-attachments/assets/8a784dc0-562a-49d7-a220-69ac23706045)
 
-
 ## 4. Architecture
 
 ![Architecture](https://github.com/user-attachments/assets/9e45318b-d241-4421-abf4-aec6fee8d061)
 
-
-
 ## 5. Methodology and Tech Stack
+
+![Methodology and Tech Stack](https://github.com/user-attachments/assets/64b80809-c3e6-438a-8098-f3c27f99644a)
 
 **Web Development**  
 - Backend: Python (Flask)  
@@ -103,112 +82,91 @@
 - ChromaDB for vector storage  
 
 **Deployment**  
-- Azure Cloud Services and Docker  
-
-![Methodology and Tech Stack](https://github.com/user-attachments/assets/64b80809-c3e6-438a-8098-f3c27f99644a)
-
+- Azure Cloud Services and Docker
 
 ## 6. Automated Routing Process
 
-- Complaints are categorized by train and station.  
-- Routed to TTE or Station Master, then forwarded to relevant departments.  
-- If unresolved within 5-10 minutes, escalated to the Division Office.  
-- Automatic rerouting if TTE declares an issue unsolvable.  
+- **Complaint Categorization**: Complaints are categorized by train and station.  
+- **Routing**: Complaints are routed to TTEs or Station Masters for initial resolution. If unresolved, they are forwarded to relevant departments.  
+- **Escalation**: If the complaint remains unresolved within 5-10 minutes, it is automatically escalated to the Division Office for further action.  
+- **Automatic Rerouting**: If the TTE declares the issue unsolvable, the complaint is rerouted to the appropriate department for resolution.
 
+## 7. Methodology and Unique Selling Points (USPs)
 
+### Input Considerations
 
-## 7. Unique Selling Points (USPs)
+The system supports multiple types of inputs for complaint registration:
 
-![Unique Selling Points](https://github.com/user-attachments/assets/12a59fc3-0dc4-455a-9feb-0536279c9460)
+- **Twitter/Social Media Posts**:  
+   Complaints or feedback from social media platforms like Twitter are integrated.  
+   [View Implementation](https://github.com/JainSneha6/RailMadad/blob/main/backend/models/tweets.py)  
 
+- **Image Inputs**:  
+   The system allows users to submit image-based complaints.  
+   [View Implementation](https://github.com/JainSneha6/RailMadad/blob/main/backend/models/image.py)  
 
+- **Video Inputs**:  
+   Video complaints or feedback can be uploaded directly into the system.  
+   [View Implementation](https://github.com/JainSneha6/RailMadad/blob/main/backend/models/video.py)  
 
-## 8. Input Considerations
+- **Voice Inputs**:  
+   Users can also register complaints via voice input, with audio being converted to text.  
+   [View Implementation](https://github.com/JainSneha6/RailMadad/blob/main/backend/models/voice.py)
 
-**Supported Input Types**  
-1. Twitter/Social Media Posts: [View Implementation](https://github.com/JainSneha6/RailMadad/blob/main/backend/models/tweets.py)  
-2. Image Inputs: [View Implementation](https://github.com/JainSneha6/RailMadad/blob/main/backend/models/image.py)  
-3. Video Inputs: [View Implementation](https://github.com/JainSneha6/RailMadad/blob/main/backend/models/video.py)  
-4. Voice Inputs: [View Implementation](https://github.com/JainSneha6/RailMadad/blob/main/backend/models/voice.py)
+### Data Extraction
 
+The system employs advanced data extraction techniques to process input from various formats:
 
+#### Data Extraction from Voice
 
-## 9. Data Extraction
+- **Voice Data**: Using **DistilBERT**, a lightweight version of BERT, the system processes audio complaints.  
+- **Noise Reduction**: Noise reduction algorithms ensure that only relevant customer content is retained for analysis.
 
-### 9.1 Data Extraction from Voice
+![DistilBERT Comparison](https://github.com/user-attachments/assets/20f6f611-61a9-4e55-aa8f-7e717170a23e)
 
-- Using **DistilBERT**, a lightweight version of BERT.  
-- Noise reduction ensures only customer content is processed.  
+#### Data Extraction from Text, Images, and Videos
 
-![DistilBERT Comparison](https://github.com/user-attachments/assets/20f6f611-61a9-4e55-aa8f-7e717170a23e)  
+- **Text & Visual Data**: For image and video complaints, the system uses **YOLOv5**, based on ResNet, for object detection and analysis.  
+- **Data Input Sources**: The system directly integrates inputs from RailMadad's official Twitter handle and app for processing.
 
-### 9.2 Data Extraction from Text, Images, and Videos
+![YOLOv5 Architecture](https://github.com/user-attachments/assets/70982645-68bc-4d45-a395-84d34e270d41)
 
-- **YOLOv5** based on ResNet for object detection in images/videos.  
-- Direct inputs from RailMadad's Twitter handle and app.  
+### Complaint Resolution and Forwarding
 
-![YOLOv5 Architecture](https://github.com/user-attachments/assets/70982645-68bc-4d45-a395-84d34e270d41)  
-
-
-
-## 10. Complaint Resolution and Forwarding
-
-- Complaints categorized by type are sent to TTEs.  
-- TTEs receive dynamically generated steps for resolution using Gemini and Llama 2.  
-- If unresolved, complaints are rerouted using natural language to appropriate departments.  
+- **Complaint Categorization**: Complaints are first categorized based on the nature of the issue and forwarded to the appropriate TTE.  
+- **Dynamic Resolution Steps**: TTEs receive dynamically generated steps for resolving complaints, utilizing **Gemini** and **Llama 2** for accurate guidance.  
+- **Rerouting**: If unresolved by the TTE, complaints are automatically rerouted to the appropriate department using natural language processing techniques.
 
 ![Routing Process](https://github.com/user-attachments/assets/1a9eb66a-2a6e-451e-ae98-2c3c9afdd996)
 
+### Department-Wise Analytics
 
-
-## 11. Department-Wise Analytics
-
-- Complaints are segmented and displayed with detailed analytics.  
-- Helps departments identify trends and recurring issues.  
+- **Segmentation**: Complaints are segmented by type, enabling departments to analyze the issues effectively.  
+- **Trends Identification**: The system provides detailed analytics, helping departments identify recurring issues and trends.
 
 ![Department Analytics](https://github.com/user-attachments/assets/cd2239f0-93b4-40bd-89ab-a2eff2609d5e)
 
+### Chat with Database
 
+- **Natural Language Querying**: The system supports natural language queries to retrieve data from the database.  
+- **Integration**: Utilizes **LangChain** with LLMs for context-aware retrieval from **Azure NoSQL** databases.
 
-## 12. Chat with Database
+### Customer Feedback Sentiment Analysis
 
-- Enables natural language queries to retrieve data from the database.  
-- Integrates LangChain with LLMs for context-aware retrieval from Azure NoSQL.  
+- **Sentiment Analysis**: Customer feedback is analyzed using **Vader's Sentiment Analyzer**, predicting trends in feedback sentiment.  
+- **Improvement**: The analysis helps in identifying patterns to improve complaint resolution processes and customer satisfaction.
 
+### Database Compatibility
 
+- **Seamless Integration**: The system’s database structure is fully aligned with RailMadad’s existing database, ensuring smooth data flow and compatibility.  
+- **Scalability**: It supports scalability to handle large volumes of data and growing needs of the system over time.
 
-## 13. Customer Feedback Sentiment Analysis
-
-- Feedback sentiment analyzed using Vader’s Sentiment Analyzer.  
-- Predicts trends and improves resolution processes.  
-
-
-
-## 14. Database Compatibility
-
-- Database structure aligned with RailMadad's for seamless integration.  
-- Supports scalability and ensures compatibility.  
-
-
-
-## 15. Business Model
-
-![Business Model](https://github.com/user-attachments/assets/38f3ef9c-de28-4b73-b878-12f38bfd0527)
-
-
-
-## 16. Dependencies
-
-- Integration with existing Rail Madad system.  
-- Use of synthetic data for testing and validation.  
-- Scalable cloud-based database deployment.  
-
-
-## 17. Demo Link and Implementation Images
+## 8. Demo Link and Implementation Images
 
 [![Watch the Project Demonstration](https://img.youtube.com/vi/4Ji4QcbaSEg/0.jpg)](https://www.youtube.com/watch?v=4Ji4QcbaSEg)
- 
-## 18.Implementation
+
+## 9. Implementation Images
+
 **Home Page**  
 ![Home Page](https://github.com/user-attachments/assets/3c68c5e0-8307-4c61-8e29-33d47bbe03aa)  
 
@@ -216,4 +174,4 @@
 ![Grievance Details](https://github.com/user-attachments/assets/6094b38a-df7e-4fcb-b369-8650c18e8986)  
 
 **Detailed Analytics**  
-![Detailed Analytics](https://github.com/user-attachments/assets/f3597a3b-b5c1-4f92-a58a-9f3e0257fbe8)  
+![Detailed Analytics](https://github.com/user-attachments/assets/f3597a3b-b5c1-4f92-a58a-9f3e0257fbe8)
