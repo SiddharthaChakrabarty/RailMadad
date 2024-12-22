@@ -29,6 +29,20 @@
 ## 1. Problem Statement
 ![image](https://github.com/user-attachments/assets/93183a5b-2ca5-4ae7-adbd-21f71496c5b6)
 
+
+## 2. Issues in Current System and Our Solution
+
+**Problems in Current System**  
+- Complaints are manually categorized and routed, leading to delays in resolution.  
+- No analysis of customer sentiment, urgency, or recurring issues.  
+- Lack of effective processing for multimedia complaints (photos and videos).
+
+**Our Solution**  
+- Centralized AI-powered system for automated categorization, routing, and analysis.  
+- Real-time sentiment and urgency detection.  
+- Integration of multimedia processing capabilities.
+
+
 ### Expected Solution
 
 **1. Automated Categorization and Prioritization**  
@@ -57,19 +71,7 @@
 
 ---
 
-## 2. Issues in Current System and Our Solution
 
-**Problems in Current System**  
-- Complaints are manually categorized and routed, leading to delays in resolution.  
-- No analysis of customer sentiment, urgency, or recurring issues.  
-- Lack of effective processing for multimedia complaints (photos and videos).
-
-**Our Solution**  
-- Centralized AI-powered system for automated categorization, routing, and analysis.  
-- Real-time sentiment and urgency detection.  
-- Integration of multimedia processing capabilities.
-
----
 
 ## 3. Core Objectives
 
@@ -78,13 +80,12 @@
 
 ![Core Objectives](https://github.com/user-attachments/assets/8a784dc0-562a-49d7-a220-69ac23706045)
 
----
 
 ## 4. Architecture
 
 ![Architecture](https://github.com/user-attachments/assets/9e45318b-d241-4421-abf4-aec6fee8d061)
 
----
+
 
 ## 5. Methodology and Tech Stack
 
@@ -106,7 +107,6 @@
 
 ![Methodology and Tech Stack](https://github.com/user-attachments/assets/64b80809-c3e6-438a-8098-f3c27f99644a)
 
----
 
 ## 6. Automated Routing Process
 
@@ -115,13 +115,13 @@
 - If unresolved within 5-10 minutes, escalated to the Division Office.  
 - Automatic rerouting if TTE declares an issue unsolvable.  
 
----
+
 
 ## 7. Unique Selling Points (USPs)
 
 ![Unique Selling Points](https://github.com/user-attachments/assets/12a59fc3-0dc4-455a-9feb-0536279c9460)
 
----
+
 
 ## 8. Input Considerations
 
@@ -131,7 +131,7 @@
 3. Video Inputs: [View Implementation](https://github.com/JainSneha6/RailMadad/blob/main/backend/models/video.py)  
 4. Voice Inputs: [View Implementation](https://github.com/JainSneha6/RailMadad/blob/main/backend/models/voice.py)
 
----
+
 
 ## 9. Data Extraction
 
@@ -149,7 +149,7 @@
 
 ![YOLOv5 Architecture](https://github.com/user-attachments/assets/70982645-68bc-4d45-a395-84d34e270d41)  
 
----
+
 
 ## 10. Complaint Resolution and Forwarding
 
@@ -159,7 +159,7 @@
 
 ![Routing Process](https://github.com/user-attachments/assets/1a9eb66a-2a6e-451e-ae98-2c3c9afdd996)
 
----
+
 
 ## 11. Department-Wise Analytics
 
@@ -168,34 +168,34 @@
 
 ![Department Analytics](https://github.com/user-attachments/assets/cd2239f0-93b4-40bd-89ab-a2eff2609d5e)
 
----
+
 
 ## 12. Chat with Database
 
 - Enables natural language queries to retrieve data from the database.  
 - Integrates LangChain with LLMs for context-aware retrieval from Azure NoSQL.  
 
----
+
 
 ## 13. Customer Feedback Sentiment Analysis
 
 - Feedback sentiment analyzed using Vader’s Sentiment Analyzer.  
 - Predicts trends and improves resolution processes.  
 
----
+
 
 ## 14. Database Compatibility
 
 - Database structure aligned with RailMadad's for seamless integration.  
 - Supports scalability and ensures compatibility.  
 
----
+
 
 ## 15. Business Model
 
 ![Business Model](https://github.com/user-attachments/assets/38f3ef9c-de28-4b73-b878-12f38bfd0527)
 
----
+
 
 ## 16. Dependencies
 
@@ -203,12 +203,12 @@
 - Use of synthetic data for testing and validation.  
 - Scalable cloud-based database deployment.  
 
----
 
 ## 17. Demo Link and Implementation Images
 
-[Watch the Project Demonstration](https://www.youtube.com/watch?v=4Ji4QcbaSEg)  
-
+[![Watch the Project Demonstration](https://img.youtube.com/vi/4Ji4QcbaSEg/0.jpg)](https://www.youtube.com/watch?v=4Ji4QcbaSEg)
+ 
+## 18.Implementation
 **Home Page**  
 ![Home Page](https://github.com/user-attachments/assets/3c68c5e0-8307-4c61-8e29-33d47bbe03aa)  
 
