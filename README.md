@@ -1,7 +1,10 @@
 # Enhancing Rail Madad with AI-Powered Complaint Management
 
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/user-attachments/assets/140ecc29-e2a6-428c-bb8f-1cf7a5ff3685" width="48%" alt="Image 2">
+  <img src="https://github.com/user-attachments/assets/afeaf842-c7d8-4ff3-a050-55861c20c70f" width="48%" alt="Image 1">
+</div>
 
-  
 ## Contributors
 
 - **Sneha Jain**
