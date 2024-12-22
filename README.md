@@ -11,18 +11,20 @@
 - **Suraj Chavan**  
 - **Anuj Tadkase**  
 
-
 ## Index
 
-1. [Problem Statement](#1-problem-statement)  
-2. [Issues in Current System and Our Solution](#2-issues-in-current-system-and-our-solution)  
-3. [Core Objectives](#3-core-objectives)  
-4. [Architecture](#4-architecture)  
-5. [Methodology and Tech Stack](#5-methodology-and-tech-stack)  
-6. [Automated Routing Process](#6-automated-routing-process)  
-7. [Methodology and Unique Selling Points (USPs)](#7-methodology-and-unique-selling-points-usps)  
-8. [Demo Link and Implementation Images](#8-demo-link-and-implementation-images)  
-9. [Implementation Images](#9-implementation-images)
+| No. | Section                                                             | Link                                                          |
+|-----|---------------------------------------------------------------------|---------------------------------------------------------------|
+| 1   | [Problem Statement](#1-problem-statement)                           | #1-problem-statement                                           |
+| 2   | [Issues in Current System and Our Solution](#2-issues-in-current-system-and-our-solution) | #2-issues-in-current-system-and-our-solution                   |
+| 3   | [Core Objectives](#3-core-objectives)                               | #3-core-objectives                                             |
+| 4   | [Architecture](#4-architecture)                                     | #4-architecture                                               |
+| 5   | [Methodology and Tech Stack](#5-methodology-and-tech-stack)         | #5-methodology-and-tech-stack                                 |
+| 6   | [Automated Routing Process](#6-automated-routing-process)           | #6-automated-routing-process                                   |
+| 7   | [Methodology and Unique Selling Points (USPs)](#7-methodology-and-unique-selling-points-usps) | #7-methodology-and-unique-selling-points-usps                   |
+| 8   | [Demo Link and Implementation Images](#8-demo-link-and-implementation-images) | #8-demo-link-and-implementation-images                         |
+| 9   | [Implementation Images](#9-implementation-images)                   | #9-implementation-images                                       |
+
 
 ## 1. Problem Statement
 ![image](https://github.com/user-attachments/assets/93183a5b-2ca5-4ae7-adbd-21f71496c5b6)
