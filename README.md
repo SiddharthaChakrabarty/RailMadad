@@ -167,6 +167,68 @@ Depending on the sentiment, further analysis is performed to predict trends and 
 
 Use of similar database for Compatibility :
 The structure of our database has been kept similar to what is used by the Railways currently to ensure compatibility & easy integration. 
-![image](https://github.com/user-attachments/assets/6cffdd48-b97f-4488-aa29-3485bf10fa38)
+![image](https://github.com/user-attachments/assets/2697d21e-af70-4357-b8e8-dcfb97015bf1) 
+![image](https://github.com/user-attachments/assets/42fb278c-e043-4f0f-849a-2b494c8e50af)
+![image](https://github.com/user-attachments/assets/7c5f5371-cb46-4d7c-b46b-330bb5de99ff)
+
+Business Model:
+Business Deployment Model :
+Our Business Deployment model is majorly based on the following two layers described below :
+
+![image](https://github.com/user-attachments/assets/38f3ef9c-de28-4b73-b878-12f38bfd0527)
+
+Dependencies :
+
+Integration with rail-madad existing system
+We have made sure that the data, and databases are similar to rail-madad, and all the models are made in a way in which it integrates with existing system of railways and  enhances it
+
+Data Availability
+We have generated synthetic data related to railway departments, complaints data as well as customer data,as per actual data so that models give accurate outputs
+
+Scalability
+Ensuring that the databases are deployed on cloud to ensure that user load is balanced and system is scalable
+
+Actual Project Demonstration :
+
+Demo link : 
+https://www.youtube.com/watch?v=4Ji4QcbaSEg
+Implementation Images:
+
+![image](https://github.com/user-attachments/assets/3c68c5e0-8307-4c61-8e29-33d47bbe03aa)
+HOME PAGE 
+This is the Home Page of our solution. 
+The user is presented with a form to enter the details of the grievance. The user needs to enter his PNR, description of the grievance & image or video file for the grievance(Optional).
+ Based on only these three inputs, the grievances will be categorized automatically and then smartly routed to the respective departments and officials.
+
+![image](https://github.com/user-attachments/assets/6094b38a-df7e-4fcb-b369-8650c18e8986)
+
+GRIEVANCE DETAILS AVAILABLE ON DEPARTMENT DASHBOARD in above image
+
+
+![image](https://github.com/user-attachments/assets/6d144077-8869-4284-b60d-66d0ad1dc8a8)
+
+DETAILED ANALYTICS BASED ON CATEGORY & PRIORITY AVAILABLE TO DEPARTMENT in above image
+
+![image](https://github.com/user-attachments/assets/f3597a3b-b5c1-4f92-a58a-9f3e0257fbe8)
+INDIVIDUAL COMPLAINT DETAILS RETRIEVAL:
+
+![image](https://github.com/user-attachments/assets/09b3c0a9-183f-4e64-84ee-872921f7a15d)
+TRAIN SPECIFIC GRIEVANCE ANALYTICS AVAILABLE TO TTE
+
+![image](https://github.com/user-attachments/assets/f938f89c-df84-45c9-a6d2-a468b5a9d0f8)
+
+DETAILED STEPS FOR RESOLUTION AVAILABLE TO TT
+
+![image](https://github.com/user-attachments/assets/a9b2b338-20f5-4414-831e-2bfa17ccd9c1)
+AUTOMATED NATURAL LANGUAGE BASED ROUTING TO FURTHER STATIONS
+
+DEMO LINK:
+https://www.youtube.com/watch?v=4Ji4QcbaSEg
+
+
+
+
+
+
 
 
