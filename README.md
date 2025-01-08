@@ -1,4 +1,4 @@
-# Enhancing Rail Madad with AI-Powered Complaint Management(Still In progress, Not done yet)
+# Enhancing Rail Madad with AI-Powered Complaint Management
 
 <div style="display: flex; justify-content: space-between;">
   <img src="https://github.com/user-attachments/assets/140ecc29-e2a6-428c-bb8f-1cf7a5ff3685" width="48%" alt="Image 2">
@@ -200,6 +200,8 @@ The system employs advanced data extraction techniques to process input from var
 
 **Smart Routing Using Chatbot** 
 ![chat based routing](https://github.com/user-attachments/assets/6b2cd75f-66f0-479d-a554-f17682d3b635)
+
 **Routed Complaints to respective TTE** 
 ![routed from chat](https://github.com/user-attachments/assets/54022b6d-654f-4d18-97ea-ba8c6470efff)
 
+## 10. 
