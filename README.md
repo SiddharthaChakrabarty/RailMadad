@@ -9,9 +9,9 @@
 
 - **Sneha Jain**
 - **Siddhartha Chakrabarty**
-- **Sakshi Salunke**   
+- **Sakshi Salunke**
+- **Suraj  Chavan**     
 - **Pratham Gadkari**  
-- **Suraj Chavan**  
 - **Anuj Tadkase**  
 
 
