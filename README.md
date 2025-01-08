@@ -193,3 +193,13 @@ The system employs advanced data extraction techniques to process input from var
 
 **Detailed Analytics**  
 ![Detailed Analytics](https://github.com/user-attachments/assets/f3597a3b-b5c1-4f92-a58a-9f3e0257fbe8)
+
+![priority grievances](https://github.com/user-attachments/assets/d09cabec-fda9-4f0c-a431-d02aae009bc9)
+
+![analytics of grievances](https://github.com/user-attachments/assets/40977e21-1bdc-4a51-ac42-dfe03ebad485)
+
+**Smart Routing Using Chatbot** 
+![chat based routing](https://github.com/user-attachments/assets/6b2cd75f-66f0-479d-a554-f17682d3b635)
+**Routed Complaints to respective TTE** 
+![routed from chat](https://github.com/user-attachments/assets/54022b6d-654f-4d18-97ea-ba8c6470efff)
+
